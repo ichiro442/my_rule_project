@@ -1,0 +1,261 @@
+/*共通*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    font-size: 1rem;
+}
+html {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+.edit-new {
+    border-radius: 0.5rem;
+    color: #f5f5f5;
+    font-weight: bold;
+    background: rgb(40, 41, 10);
+    width: 30%;
+    margin: 1rem 0 0 1rem;
+    padding: 0.5rem 1rem;
+    font-family: "PixelMplus10 Regular";
+    border: 3px solid white;
+}
+.main_color {
+    text-shadow: -1px 1px 0 #d2ae2c, -1px 1px 0 #d2ae2c, -2px 2px 0 #d2ae2c,
+        -3px 3px 0 #d2ae2c, -4px 4px 0 #d2ae2c, -5px 5px 0 #d2ae2c,
+        -6px 6px 0 #d2ae2c, -7px 7px 0 #d2ae2c, -8px 8px 0 #d2ae2c,
+        -9px 9px 0 #d2ae2c, -10px 10px 0 #d2ae2c, -11px 11px 0 #d2ae2c,
+        -12px 12px 0 #d2ae2c, -12px 12px 0 #d2ae2c, -12px 12px 0 #d2ae2c,
+        -13px 13px 0 #d2ae2c, -14px 14px 0 #d2ae2c, -15px 15px 0 #d2ae2c;
+    color: #ad6fbf;
+}
+ul,
+li {
+    list-style: none;
+}
+
+/* ボタン */
+.button{
+    color:#fff;
+    position:relative;
+    transition:800ms ease all;
+  }
+  .button:hover{
+    background:#fff;
+    color: black;
+  }
+  .button:before,.button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: white;
+    transition:400ms ease all;
+  }
+  .button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .button:hover:before,.button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  /* ボタン２ */
+  .button_2{
+    color: #d2ae2c;
+    position:relative;
+    transition:800ms ease all;
+  }
+  .button_2:hover{
+    background:#fff;
+    color: black;
+  }
+  .button_2:before,.button_2:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: white;
+    transition:400ms ease all;
+  }
+  .button_2:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .button_2:hover:before,.button_2:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+
+/*  home.blade.php   home.blade.php   home.blade.php  */
+.app_wrapper {
+    background-color: black;
+}
+.collapse {
+    width: 100%;
+    background-color: black;
+    height: 10rem;
+}
+.collapse a {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ad6fbf;
+}
+.py-4 {
+    height: 50rem;
+    background-color: #ad6fbf;
+}
+/* ここまでがhome.blade.php   ここまでがhome.blade.php   ここまでがhome.blade.php   ここまでがhome.blade.php */
+/* login.blade.php login.blade.php login.blade.php */
+/* ギットハブ ドラクエ風font-family */
+@font-face {
+    font-family: PixelMplus10 Regular;
+    src: url("https://cdn.leafscape.be/PixelMplus/PixelMplus10-Regular_web.woff2")
+        format("woff2");
+}
+
+@font-face {
+    font-family: PixelMplus12 Regular;
+    src: url("https://cdn.leafscape.be/PixelMplus/PixelMplus12-Regular_web.woff2")
+        format("woff2");
+}
+.card-header{
+    background-color: black;
+    color: #d2ae2c;
+    font-weight: 800;
+    font-family: "PixelMplus10 Regular";
+
+
+}
+.card-body{
+ background-color: #d2ae2c;
+ color: white;
+ font-family: "PixelMplus10 Regular";
+ color: #ad6fbf;
+} 
+.btn{
+    color: #d2ae2c;
+background-color: black; 
+}
+.dropdown_box{
+    background-color: black;
+}
+/* ここまでがlogin.blade.php ここまでがlogin.blade.php ここまでがlogin.blade.php */
+/* welcome.blade.php  welcome.blade.php  welcome.blade.php  */
+
+.login_box{
+   width: 80%;
+text-align: center;
+}
+.login_box a{
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+}
+.light_1 {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    0 0 60px 30px #fff,
+    0 0 100px 60px #f0f,
+    0 0 140px 90px #0ff;
+}
+/* .light_wrap{
+  animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1);
+}
+
+@keyframes light_wrap {
+  0% {
+    clip-path: circle(0 at 50% 50%);
+    -webkit-clip-path: circle(0 at 50% 50%);
+  }
+  
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    -webkit-clip-path: circle(100% at 50% 50%);
+  }
+} */
+/* 画像ゆっくり登場 */
+.img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-wrap:before,
+.img-wrap:after {
+  animation: 12s cubic-bezier(.4, 0, .2, 1) forwards;
+  background: black;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.img-wrap:before {
+  animation-name: img-wrap-before;
+  top: 0;
+  bottom: 50%;
+}
+
+.img-wrap:after {
+  animation-name: img-wrap-after;
+  top: 50%;
+  bottom: 0;
+}
+
+@keyframes img-wrap-before {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes img-wrap-after {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* ここまでがwelcome.blade.php  ここまでがwelcome.blade.php  ここまでがwelcome.blade.php  */
+/* app.blade.php  app.blade.php  app.blade.php */
+.nav-link{
+    color: #ad6fbf !important;
+
+}
+.dropdown-menu a{
+    background-color: #d2ae2c;
+}
+
+/* ここまでがapp.blade.php  ここまでがapp.blade.php  ここまでがapp.blade.php */
