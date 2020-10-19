@@ -62,6 +62,7 @@
     <!-- <canvas id=c></canvas> -->
         <div class="flex-center position-ref full-height">
                 <div class="light_1"></div>
+                <h1>練習</h1>
             <div class="content">
                 <div class="title m-b-md img-wrap">
                    <img class="top-logo" src="../img/top-logo.svg" alt="">
