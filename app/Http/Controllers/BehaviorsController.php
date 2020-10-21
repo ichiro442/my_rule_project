@@ -43,10 +43,8 @@ class BehaviorsController extends Controller
     function countdown($id)
     
     {
-        $behavior = \App\Behavior::find($id); 
-        // Behavior MOdelのidを見つけてね。
-        $goal = \App\Goal::find($behavior->goal_id);
-// behaviorModelがBehavior.phpに取得しているgoal_idを見つけて$goalに入れたよ。
+        $behavior = \App\Behavior::find($id); // Behavior MOdelのidを見つけてね。
+        $goal = \App\Goal::find($behavior->goal_id);// behaviorModelがBehavior.phpに取得しているgoal_idを見つけて$goalに入れたよ。
         return view('behaviors.countdown', compact("behavior", "goal"));
         // 返す view=bladeのやつに返すよ  compact behaviorは$behavior
     }
@@ -100,22 +98,4 @@ class BehaviorsController extends Controller
     $goal = \App\Goal::find($id);
     return view('behaviors.goal_update_time_limit', compact("goal"));
   }
-  // public function store(Request $request)
-  // {
-  //   $request->validate([
-  //     'task' => 'required',
-  //     'experience_point' => 'required',
-  //     'reward' => 'required',
-  //     'time_limit' => 'required',
-  //     'choice' => 'required',
-  //   ],
-  //   [
-  //     'task.required' => "必須です",
-  //     'experience_point.required' => '必須です',
-  //     "reward.required" => "必須です",
-  //     "time_limit.required" => "必須です",
-  //     'choice.required' => '必須です',
-  //   ]
-  // );
-  // }
 }

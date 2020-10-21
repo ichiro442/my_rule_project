@@ -8,7 +8,7 @@
             </p>
 
             <p>今のトータルの経験値は {{ $user->experience_point }}</p>
-            <p>あなたの現在のレベルは Lv{{ $level->level }}</p>
+            <p>あなたの現在のレベルは Lv{{ $user->level }}</p>
             <p>あなたは {{ $level->level_name }}</p>
         </div>
         <div class="clear_message edit-new">

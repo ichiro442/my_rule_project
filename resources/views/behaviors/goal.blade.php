@@ -14,7 +14,7 @@
               <div class="battle_member edit-new">
                 <table>
                     <tr>
-                    コナン
+                    勇者
                     </tr>
                     <tr>
                     <th>H</th>

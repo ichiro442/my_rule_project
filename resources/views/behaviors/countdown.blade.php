@@ -14,32 +14,34 @@
           </div>
         </div>
         <!-- user情報 -->
-        <div class="battle_member edit-new">
-          <table>
-            <tr>
-              コナン
-            </tr>
-            <tr>
-              <th>H</th>
-              <td>319</td>
-            </tr>
-            <tr>
-              <th>M</th>
-              <td>192</td>
-            </tr>
-            <tr>
-              <th>Lv</th>
-              <td>35</td>
-            </tr>
-          </table>
-        </div>
-        <br>
-        <!-- 行動の選択 -->
-        <div class="behavior_choice edit-new flex">
-          <p>たたかう</p>
-          <p>いれかえ</p>
-          <p>さくせん</p>
-          <p>にげる</p>
+        <div class="countdown_left">
+          <div class="battle_member edit-new">
+            <table>
+              <tr>
+              勇者
+              </tr>
+              <tr>
+                <th>H</th>
+                <td>319</td>
+              </tr>
+              <tr>
+                <th>M</th>
+                <td>192</td>
+              </tr>
+              <tr>
+                <th>Lv</th>
+                <td>35</td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          <!-- 行動の選択 -->
+          <div class="behavior_choice edit-new flex">
+            <p>たたかう</p>
+            <p>いれかえ</p>
+            <p>さくせん</p>
+            <p>にげる</p>
+          </div>
         </div>
         <div class="battle_enemy edit-new">
           {{ $zako = $behavior->task }}スライム があらわれた！

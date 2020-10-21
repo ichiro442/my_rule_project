@@ -190,11 +190,13 @@ text-align: center;
     0 0 100px 60px #f0f,
     0 0 140px 90px #0ff;
 }
-/* .light_wrap{
-  animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1);
+/* 画像ゆっくり登場 */
+
+.img-wrap {
+  animation: img-wrap 10s cubic-bezier(.4, 0, .2, 1);
 }
 
-@keyframes light_wrap {
+@keyframes img-wrap {
   0% {
     clip-path: circle(0 at 50% 50%);
     -webkit-clip-path: circle(0 at 50% 50%);
@@ -203,47 +205,6 @@ text-align: center;
   100% {
     clip-path: circle(100% at 50% 50%);
     -webkit-clip-path: circle(100% at 50% 50%);
-  }
-} */
-/* 画像ゆっくり登場 */
-.img-wrap {
-  overflow: hidden;
-  position: relative;
-}
-
-.img-wrap:before,
-.img-wrap:after {
-  animation: 12s cubic-bezier(.4, 0, .2, 1) forwards;
-  background: black;
-  content: '';
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-}
-
-.img-wrap:before {
-  animation-name: img-wrap-before;
-  top: 0;
-  bottom: 50%;
-}
-
-.img-wrap:after {
-  animation-name: img-wrap-after;
-  top: 50%;
-  bottom: 0;
-}
-
-@keyframes img-wrap-before {
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes img-wrap-after {
-  100% {
-    transform: translateX(-100%);
   }
 }
 
