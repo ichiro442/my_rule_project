@@ -28,14 +28,14 @@ class HomeController extends Controller
     function create(Request $request)
     {
         $request->validate([
-            'task' => 'required',
+            'goal' => 'required',
             'experience_point' => 'required',
             'reward' => 'required',
             'time_limit' => 'required',
             'choice' => 'required',
           ],
           [
-            'task.required' => "敵の名前は必須です！",
+            'goal.required' => "敵の名前は必須です！",
             'experience_point.required' => '経験値は必須です！',
             "reward.required" => "ご褒美は必須です！",
             "time_limit.required" => "期限は必須です！",
