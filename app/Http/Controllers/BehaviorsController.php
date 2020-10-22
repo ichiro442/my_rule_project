@@ -96,8 +96,8 @@ class BehaviorsController extends Controller
       }
     }
     $user->save();
-
-    return view('behaviors.goal_clear', compact("goal","user","level_names")); // comnpactの ,"level" をけいしてみたら表示されたよ！理由はわからないけど
+    $hoge = \App\Level_standard::where("level", $user->level)->first(); // レベルスタンダードの"level"の$user->levelユーザーのレベルと一致するものを一つとってくる
+    return view('behaviors.goal_clear', compact("goal","user","level_names","hoge")); // comnpactの ,"level" をけいしてみたら表示されたよ！理由はわからないけど
   }
   function goal_update_time_limit($id){
     $goal = \App\Goal::find($id);
