@@ -217,7 +217,7 @@ text-align: center;
     opacity: 1;
   }
 }
-/* @keyframes text-focus-in {
+@keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
             filter: blur(12px);
@@ -228,7 +228,7 @@ text-align: center;
             filter: blur(0px);
     opacity: 1;
   }
-} */
+}
 /* ここまでが文字が浮かび上がってくる処理 */
 
 /* ここまでがwelcome.blade.php  ここまでがwelcome.blade.php  ここまでがwelcome.blade.php  */
