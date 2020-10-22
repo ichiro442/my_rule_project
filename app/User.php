@@ -36,4 +36,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // protected $fillable = ['goal', 'user_id', 'experience_point','time_limit', 'reward'];
+
+    public function goals()
+    {
+        return $this->hasMany('App\Goal');
+    }
+    
+
 }

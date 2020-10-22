@@ -3,14 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
 
     function top()
     {
-        // $user = Auth::user();
-        $goals = \App\Goal::all();
+        //$goals = \App\Goal::all();
+        //$users = \App\Goal::where("user_id",$goals->goal)->first(); 
+        $user =  Auth::user();
+        $goals = \App\Goal::where("user_id", "=", $user->id)->get();
+        // $goals->$users->user_id;
+
+        // userが作ったgoalだけをとってくる
         return view('home.top', compact("goals"));
     }
     function show($id)

@@ -12,4 +12,7 @@ class Goal extends Model
     {
         return $this->hasMany('App\Behavior');
     }
+    public function users(){
+        return $this->belongsTo('App\User');
+    }
 }
