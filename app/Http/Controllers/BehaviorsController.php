@@ -56,10 +56,9 @@ class BehaviorsController extends Controller
     $goal = $behavior->goal;
     // $goalにbehavior->goalを代入したよ
     $level = \App\Behavior::find($id);
-    $level_names = \App\Level_standard::find($id);
     $user = Auth::user();
     if ($user->level < 10){
-      $total_exp = $behavior->experience_point  + $user->experience_point;
+      $total_exp = $behavior->experience_point + $user->experience_point;
       $user->experience_point = $total_exp;
       $level = \App\Level_standard::where('level', $user->level + 1)->first();
       if ($level->standard <= $user->experience_point) {
@@ -67,7 +66,9 @@ class BehaviorsController extends Controller
       }
     }
     $user->save();
-    return view('behaviors.clear', compact("goal","behavior","user","level","level_names"));
+    //枝が書いたところ
+    $hoge = \App\Level_standard::where("level", $user->level)->first(); // レベルスタンダードの"level"の$user->levelユーザーのレベルと一致するものを一つとってくる
+    return view('behaviors.clear', compact("goal","behavior","user","level", "hoge"));
   }
   function update_time_limit($id)
   {

@@ -19,7 +19,7 @@
                 <span>{{ $behavior->experience_point }}ポイント</span>の経験値を かくとく！</p>
                 <p>今のトータルの経験値は<span> {{ $user->experience_point }}</span></p>
             <p>あなたの現在のレベルは<span>  Lv{{ $user->level }}</span></p>
-            <p>あなたは<span> {{ $level_names->level_name }} </span>です</p>
+            <p>あなたは<span> {{ $hoge->level_name }} </span>です</p>
             </div>
             <div class="clear_message edit-new">
                 おめでとうございます！！！！<br>

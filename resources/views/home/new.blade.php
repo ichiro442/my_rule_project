@@ -49,5 +49,5 @@
 </body>
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-<link rel="stylesheet" href="{{ asset('css/space.css') }}">
+<!-- <link rel="stylesheet" href="{{ asset('css/space.css') }}"> -->
 
