@@ -1,7 +1,28 @@
 <header><h1>入力フォーム</h1></header>
-<main class="flex"> 
+<body>
+  <!-- 宇宙テスト -->
+<div id="d1" class="d1">
+  <div id="d2" class="d2">
+    <div id="d3" class="d3">
+    </div>
+  </div>
+</div>
+  <!-- ここまで宇宙テスト -->
+
+<main class="new_main flex"> 
   <form action="{{ url('/hello/create')}}" method="POST">
     {{ csrf_field() }}
+    				<!-- 未入力エラー -->
+            @if ($errors->any())
+					<div class="alert edit-new alert-danger">
+						<ul>
+							@foreach ($errors->all() as $error)
+								<li>{{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif
+
     <table>
       <tr>
         <th>目標</th>
@@ -13,7 +34,7 @@
       </tr>
       <tr>
         <th>期限</th>
-        <td><input type="datetime-local" name="time_limit" class="edit-new map_new"></td>
+        <td><input type="datetime-local" name="time_limit" class="edit-new map_new limit_btn"></td>
       </tr>
       <tr>
         <th>ご褒美</th>
@@ -25,5 +46,8 @@
     </button>
   </form>
 </main>
+</body>
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/space.css') }}">
+

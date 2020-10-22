@@ -19,6 +19,17 @@
             この者に あなたさまのご加護のあらんことを！！」<br>
         </div>
                 {{ csrf_field() }}
+                				<!-- 未入力エラー -->
+				@if ($errors->any())
+					<div class="alert edit-new alert-danger">
+						<ul>
+							@foreach ($errors->all() as $error)
+								<li>{{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif
+
                         <table>
                             <tr>
                                 <th>名前</th>
@@ -34,7 +45,7 @@
                             </tr>
                             <tr>
                                 <th>期限</th>
-                                <td><input type="datetime-local" name="time_limit" class="edit-new map_new"></td>
+                                <td><input type="datetime-local" name="time_limit" class="edit-new map_new limit_btn"></td>
                             </tr>
                             <tr>
                                 <th>タイプ</th>

@@ -9,15 +9,16 @@ class HomeController extends Controller
 
     function top()
     {
+        // $user = Auth::user();
         $goals = \App\Goal::all();
         return view('home.top', compact("goals"));
     }
     function show($id)
     {
+        // $user = Auth::user();
         $goal = \App\Goal::find($id);
         $behaviors = $goal->behaviors;
         return view('home.show', compact('goal', 'behaviors'));
-        // return view('home.clear', compact('goal', 'behaviors'));
         
     }
     function new()
@@ -26,6 +27,21 @@ class HomeController extends Controller
     }
     function create(Request $request)
     {
+        $request->validate([
+            'task' => 'required',
+            'experience_point' => 'required',
+            'reward' => 'required',
+            'time_limit' => 'required',
+            'choice' => 'required',
+          ],
+          [
+            'task.required' => "敵の名前は必須です！",
+            'experience_point.required' => '経験値は必須です！',
+            "reward.required" => "ご褒美は必須です！",
+            "time_limit.required" => "期限は必須です！",
+            'choice.required' => '必須です',
+          ]
+        );
         $goal = $request->input("goal");// 情報を受け取る
         $experience_point = $request->input("experience_point");
         $reward = $request->input("reward");

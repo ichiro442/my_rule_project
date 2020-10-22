@@ -41,12 +41,13 @@ class BehaviorsController extends Controller
       return redirect("/hello/".$id); // 一覧にリダイレクトさせる
     }
     function countdown($id)
-    
     {
+      $level = \App\Level_standard::find($id);
+      $user =  Auth::user();
         $behavior = \App\Behavior::find($id); // Behavior MOdelのidを見つけてね。
         $goal = \App\Goal::find($behavior->goal_id);// behaviorModelがBehavior.phpに取得しているgoal_idを見つけて$goalに入れたよ。
-        return view('behaviors.countdown', compact("behavior", "goal"));
-        // 返す view=bladeのやつに返すよ  compact behaviorは$behavior
+        return view('behaviors.countdown', compact("behavior", "goal","user","level"));
+        // 返す view=bladeのやつに返すよ  compact behaviorは$behaviorのことだよ
     }
 
   function clear($id)
@@ -55,7 +56,7 @@ class BehaviorsController extends Controller
     $goal = $behavior->goal;
     // $goalにbehavior->goalを代入したよ
     $level = \App\Behavior::find($id);
-    // $level_name = $level->level_name;
+    $level_names = \App\Level_standard::find($id);
     $user = Auth::user();
     if ($user->level < 10){
       $total_exp = $behavior->experience_point  + $user->experience_point;
@@ -66,7 +67,7 @@ class BehaviorsController extends Controller
       }
     }
     $user->save();
-    return view('behaviors.clear', compact("goal","behavior","user","level"));
+    return view('behaviors.clear', compact("goal","behavior","user","level","level_names"));
   }
   function update_time_limit($id)
   {
@@ -77,10 +78,13 @@ class BehaviorsController extends Controller
 
   function goal($id){
     $goal = \App\Goal::find($id);
-    return view('behaviors.goal', compact("goal"));
+    $user = Auth::user();
+    $level = \App\Level_standard::find($id);
+    return view('behaviors.goal', compact("goal","user","level"));
   }
   function goal_clear($id){
     $goal = \App\Goal::find($id);
+    $level_names = \App\Level_standard::find($id);
     $user = Auth::user();
     if ($user->level < 10){
       $total_exp = $goal->experience_point  + $user->experience_point;
@@ -92,7 +96,7 @@ class BehaviorsController extends Controller
     }
     $user->save();
 
-    return view('behaviors.goal_clear', compact("goal","level","user"));
+    return view('behaviors.goal_clear', compact("goal","user","level_names")); // comnpactの ,"level" をけいしてみたら表示されたよ！理由はわからないけど
   }
   function goal_update_time_limit($id){
     $goal = \App\Goal::find($id);

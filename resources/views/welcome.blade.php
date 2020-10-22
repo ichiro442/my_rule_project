@@ -9,6 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/space.css') }}" rel="stylesheet">
     
 
 
@@ -59,13 +60,20 @@
         </style>
     </head>
     <body>
-    <!-- <canvas id=c></canvas> -->
+          <!-- 宇宙テスト -->
+<div id="d1">
+  <div id="d2">
+    <div id="d3">
+    </div>
+  </div>
+</div>
+  <!-- ここまで宇宙テスト -->
+
         <div class="flex-center position-ref full-height">
                 <div class="light_1"></div>
             <div class="content">
-                <div class="title m-b-md img-wrap">
-                   <img class="top-logo" src="../img/top-logo.svg" alt="">
-
+                <div class="title m-b-md">
+                    <p class="text-focus-in"> <img class="top-logo" src="../img/top-logo.svg" alt=""></p>
                 </div>
                 @if (Route::has('login'))
                 <div class="top-right links login_box flex">
@@ -79,18 +87,6 @@
                     @endauth
                 </div>
             @endif
-
-
-                <!-- <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div> -->
             </div>
         </div>
     </body>

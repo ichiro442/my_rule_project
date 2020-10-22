@@ -4,19 +4,19 @@
 		<div class="details_box">
 				<table>
 				<tr>
-					<th>勇者のID</th>
+					<th>ID</th>
 					<td>{{ $goal['id'] }}</td>
 				</tr>
 				<tr>
-				<th>勇者のタイトル</th>
+				<th>勇者の敵</th>
 					<td>{{ $goal['goal'] }}</td>
 				</tr>
 				<tr>
-				<th>勇者の作成日時</th>
+				<th>作成日時</th>
 					<td>{{ $goal['created_at'] }}</td>
 				</tr>
 				<tr>
-				<th>勇者の更新日時</th>
+				<th>更新日時</th>
 					<td>{{ $goal['updated_at'] }}</td>
 				</tr>
 				</table>
@@ -54,7 +54,7 @@
 					</tr>
 					<tr>
 						<th>期限</th>
-						<td><input type="datetime-local" name="time_limit" class="edit-new map_new"></td>
+						<td><input type="datetime-local" name="time_limit" class="edit-new map_new limit_btn"></td>
 					</tr>
 					<tr>
 						<th>タイプ</th>

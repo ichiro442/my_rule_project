@@ -14,7 +14,7 @@
               <div class="battle_member edit-new">
                 <table>
                     <tr>
-                    勇者
+                    {{ $user->name }}
                     </tr>
                     <tr>
                     <th>H</th>
@@ -26,7 +26,7 @@
                     </tr>
                     <tr>
                     <th>Lv</th>
-                    <td>35</td>
+                    <td>{{ $user->level }}</td>
                     </tr>
                 </table>
               </div>
