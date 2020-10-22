@@ -7,7 +7,7 @@
   </a>
  
 </header>
-<!-- <a href="http://127.0.0.1:8000/" class="top_logout main_color">Log Out</a> -->
+<a href="http://127.0.0.1:8000/" class="top_logout main_color">Log Out</a>
 <body>
   <!-- 宇宙css -->
 <div id="d1">
