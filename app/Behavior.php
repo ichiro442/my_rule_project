@@ -11,5 +11,7 @@ class Behavior extends Model
     public function goal()
     {
         return $this->belongsTo('App\Goal');
+        // 一対多で、多側から一側に繋がる道の名前がbelongsTo
+
     }
 }

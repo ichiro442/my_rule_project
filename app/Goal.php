@@ -13,6 +13,7 @@ class Goal extends Model
         return $this->hasMany('App\Behavior');
     }
     public function users(){
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User'); 
+        // 一対多で、多側から一側に繋がる道の名前がbelongsTo
     }
 }

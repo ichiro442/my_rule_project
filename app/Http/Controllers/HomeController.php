@@ -3,25 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Auth; // 特定のルートやアクションを、認証済みユーザーだけがアクセスできるよう保護することができる
 
 class HomeController extends Controller
 {
 
     function top()
     {
-        //$goals = \App\Goal::all();
-        //$users = \App\Goal::where("user_id",$goals->goal)->first(); 
         $user =  Auth::user();
         $goals = \App\Goal::where("user_id", "=", $user->id)->get();
-        // $goals->$users->user_id;
-
-        // userが作ったgoalだけをとってくる
         return view('home.top', compact("goals"));
     }
     function show($id)
     {
-        // $user = Auth::user();
         $goal = \App\Goal::find($id);
         $behaviors = $goal->behaviors;
         return view('home.show', compact('goal', 'behaviors'));
@@ -34,6 +28,7 @@ class HomeController extends Controller
     function create(Request $request)
     {
         $request->validate([
+            // バリデーション
             'goal' => 'required',
             'experience_point' => 'required',
             'reward' => 'required',

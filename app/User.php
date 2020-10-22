@@ -42,6 +42,8 @@ class User extends Authenticatable
     public function goals()
     {
         return $this->hasMany('App\Goal');
+        // 一対多で、多側から一側に繋がる道の名前がhasMany
+
     }
     
 

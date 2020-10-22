@@ -40,7 +40,7 @@
             <p>たたかう</p>
             <p>いれかえ</p>
             <p>さくせん</p>
-            <p>にげる</p>
+            <p> <a class="button" href="/behavior/update_time_limit/{{ $behavior->id }}">にげる</a></p>
           </div>
         </div>
         <div class="battle_enemy edit-new">

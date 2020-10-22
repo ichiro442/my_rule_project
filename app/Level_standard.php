@@ -11,6 +11,8 @@ class Level_standard extends Model
     public function behaviors()
     {
         return $this->hasMany('App\Behavior');
+        // 一対多で、多側から一側に繋がる道の名前がhasMany
+
     }
     
 
