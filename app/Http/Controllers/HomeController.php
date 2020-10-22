@@ -32,14 +32,12 @@ class HomeController extends Controller
             'experience_point' => 'required',
             'reward' => 'required',
             'time_limit' => 'required',
-            'choice' => 'required',
           ],
           [
             'goal.required' => "敵の名前は必須です！",
             'experience_point.required' => '経験値は必須です！',
             "reward.required" => "ご褒美は必須です！",
             "time_limit.required" => "期限は必須です！",
-            'choice.required' => '必須です',
           ]
         );
         $goal = $request->input("goal");// 情報を受け取る
