@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+// リレーション  一対多とか一対一とかのことだね
 
 class Behavior extends Model
 {
