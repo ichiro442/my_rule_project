@@ -1,5 +1,5 @@
 <div class="clear_container flex">
-    <img class="clear_img_1" src="https://lh3.googleusercontent.com/proxy/TDYtyJk_KjOYrEHbm39H5OA4nrP2JVQLvFnwYSz-IaOWQP9jEecs8FYzqPWpI02ocKYmw4oP_i8n1FJk6_0QV4boRH77irrSImmp-tBo6DV1KZg-JmsGaYmSpHO7d4G2fsbqSRFRWXiRpGhcGr6hUly3ePTb8se_uCMeuBNbOhup3-OI1ACHItAPt6x-izFz0vwnUxep50gczrRnh_3JnN0H4MRhGoE_na89-zT1cyseIg6kbc_-mrgSq6CN4h3gX8YvFYKQuOkYg4ePJqQZ1ztZnlC0wL92oCpU" alt="">
+<img class="clear_img_1" src="https://www.dq11.jp/_img/gate_v6/pic.jpg" alt="">
     <!-- <img class="clear_img" src="https://xneo.jp/wp-content/uploads/2019/09/dq-walk-1.jpeg" alt=""> -->
     <!-- スターウォーズ css -->
     <div class="type-pers-parent">
