@@ -181,6 +181,9 @@ main {
 .top_header{
     justify-content: space-between;
 }
+.top_header{
+    justify-content: space-between;
+}
 /*main*/
 .task-items {
     width: 100%;
