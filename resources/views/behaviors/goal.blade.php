@@ -36,7 +36,7 @@
                 <p>たたかう</p>
                 <p>いれかえ</p>
                 <p>さくせん</p>
-                <p>にげる</p>
+                <p> <a class="button" href="/hello/{{ $goal->id }}">にげる</a></p>
               </div>
           </div>
             <div class="goal_enemy edit-new">
