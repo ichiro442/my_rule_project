@@ -11,7 +11,8 @@ class BehaviorsController extends Controller
 {
     function create(Request $request, $id)
     {
-      $request->validate([
+            // バリデーション
+            $request->validate([
           'task' => 'required',
           'experience_point' => 'required',
           'reward' => 'required',

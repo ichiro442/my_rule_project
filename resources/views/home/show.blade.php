@@ -1,4 +1,4 @@
-<header><h1>冒険の書</h1></header>
+<header class="main_color"><h1>冒険の書</h1></header>
 <main class="map_main flex">
 	<div class="map_left">
 		<div class="details_box">

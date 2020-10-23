@@ -1,4 +1,9 @@
-/*共通*/
+/**
+ * ----------------------------------------
+ * 共通 
+ * ----------------------------------------
+ */
+
 * {
     margin: 0;
     padding: 0;
@@ -112,26 +117,11 @@ header {
     background-color: black;
     margin: 0;
     font-size: 3em;
-    text-shadow: -1px 1px 0 #d2ae2c, -1px 1px 0 #d2ae2c, -2px 2px 0 #d2ae2c,
-        -3px 3px 0 #d2ae2c, -4px 4px 0 #d2ae2c, -5px 5px 0 #d2ae2c,
-        -6px 6px 0 #d2ae2c, -7px 7px 0 #d2ae2c, -8px 8px 0 #d2ae2c,
-        -9px 9px 0 #d2ae2c, -10px 10px 0 #d2ae2c, -11px 11px 0 #d2ae2c,
-        -12px 12px 0 #d2ae2c, -12px 12px 0 #d2ae2c, -12px 12px 0 #d2ae2c,
-        -13px 13px 0 #d2ae2c, -14px 14px 0 #d2ae2c, -15px 15px 0 #d2ae2c;
     display: inline-block;
     z-index: 100;
     position: relative;
-    color: #ad6fbf;
     text-align: center;
     padding: 1rem 0;
-    position: relative;
-}
-
-.top-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 h1 {
     margin: 0;
@@ -139,13 +129,10 @@ h1 {
 
 header a {
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
     font-weight: bold;
-    color: #ad6fbf;
-}
-.top_logout{
     font-size: 40;
     font-weight: 900;
+
 }
 /* main */
 main {
@@ -155,20 +142,46 @@ main {
     margin: 0;
     font-family: "PixelMplus10 Regular";
     padding-left: 2rem;
+    z-index: 100;
 }
-/* ここまでが共通 ここまでが共通 ここまでが共通 ここまでが共通*/
+/**
+ * ----------------------------------------
+ * ここまでが共通 ここまでが共通 ここまでが共通 ここまでが共通
+ * ----------------------------------------
+ */
 
+
+ /**
+ * ----------------------------------------
+ *入力画面 new.blade.php 入力画面 new.blade.php 入力画面 new.blade.php 
+ * ----------------------------------------
+ */
+ /* .new_main{
+    width: 100%;
+    height: 100%;
+}
+.new_background{
+    width: 60%;
+}
+.type-pers-parent{
+    height: 100% !important; */
+}
+ /**
+ * ----------------------------------------
+ *ここまでが入力画面 new.blade.php ここまでが入力画面 new.blade.php ここまでが入力画面 new.blade.php 
+ * ----------------------------------------
+ */
+
+ /**
+ * ----------------------------------------
+ * top.blade.php   top.blade.php   top.blade.php  
+ * ----------------------------------------
+ */
 /*header*/
-.btn-new {
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    transform: translateY(-50%);
+.top_header{
+    justify-content: space-between;
 }
 /*main*/
-/* .new_main{
-    background-color: black;
-} */
 .task-items {
     width: 100%;
 }
@@ -203,15 +216,24 @@ main {
     color: #f5f5f5;
     font-weight: bold;
     background: rgb(40, 41, 10);
-    font-family: "PixelMplus10 Regular";
     border: 3px solid white;
 }
 
 .btn-edit {
     margin-right: 0.5rem;
 }
+/* ---------------------------------------------------
+|ここまでがtop.blade.php   ここまでがtop.blade.php   ここまでがtop.blade.php 
 
-/* 冒険の書のmain  show.blade.php 冒険の書のmain  show.blade.php*/
+|-------------------------------------------------- */
+
+ /**
+ * ----------------------------------------
+ *  冒険の書のmain  show.blade.php 冒険の書のmain  show.blade.php
+
+ * ----------------------------------------
+ */
+
 .map_left {
     width: 40%;
     height: 100%;
@@ -222,7 +244,6 @@ main {
 .type {
     background-color: black;
     color: white;
-    font-family: "PixelMplus10 Regular";
     border: 3px solid white;
     border-radius: 0.25rem;
 }
@@ -238,7 +259,6 @@ main {
     height: 3rem;
     border: 3px solid red;
     color: white;
-    font-family: "PixelMplus10 Regular";
 }
 .column {
     border-radius: 0.25rem;
@@ -249,7 +269,6 @@ main {
     height: 3rem;
     border: 3px solid white;
     color: white;
-    font-family: "PixelMplus10 Regular";
 }
 .boss_color {
     border: 3px solid red;
@@ -299,8 +318,22 @@ td {
     font-size: 1.8rem;
     width: 80%;
 }
-/* ここまでが 冒険の書のmain  show.blade.php  ここまでが 冒険の書のmain  show.blade.php */
-/* バトルページ countdown.blade.php  バトルページ countdown.blade.php */
+ /**
+ * ----------------------------------------
+ *  
+ここまでが 冒険の書のmain  show.blade.php  ここまでが 冒険の書のmain  show.blade.php
+
+ * ----------------------------------------
+ */
+
+ /**
+ * ----------------------------------------
+ *  
+バトルページ countdown.blade.php  バトルページ countdown.blade.php
+
+ * ----------------------------------------
+ */
+
 .battle_wrapper {
     width: 100%;
     height: 100%;
@@ -432,9 +465,23 @@ td {
         padding: 0.3em 0.15em;
     }
 }
-/* ここまでがバトルページ countdown.blade.php  ここまでがバトルページ countdown.blade.php */
 
-/* クリア画面 clear.blade.php  クリア画面 clear.blade.php  クリア画面 clear.blade.php */
+ /**
+ * ----------------------------------------
+ *  
+ここまでがバトルページ countdown.blade.php  ここまでがバトルページ countdown.blade.php
+
+ * ----------------------------------------
+ */
+
+ /**
+ * ----------------------------------------
+ *  
+クリア画面 clear.blade.php  クリア画面 clear.blade.php  クリア画面 clear.blade.php
+
+ * ----------------------------------------
+ */
+
 .clear_container {
     width: 100%;
     height: 100%;
@@ -466,7 +513,7 @@ color: red;
     margin: 1rem;
 }
 
-/* スターウォーズ テスト  */
+/* スターウォーズ ゆっくり遠ざかっていくアニメーション  */
 .type-pers-parent {
     perspective: 150px;
     -webkit-perspective: 150px;
@@ -478,19 +525,31 @@ color: red;
   .type-pers-child {
     text-align: justify;
     padding: 5%;
-    -webkit-animation: typetext linear 20s infinite;
+    -webkit-animation: typetext ease-in 23s infinite;
     color: #F1C40F;
     letter-spacing: 1px;
   }
    
   @-webkit-keyframes typetext {
-     0% {transform: rotateX(5deg) translate(0,0);}
+     0% {transform: rotateX(0deg) translate(0,0);}
     100% {transform: rotateX(45deg) translate(0,-500px);}
   }
 
-/* ここまでがクリア画面 clear.blade.php  ここまでがクリア画面 clear.blade.php  ここまでがクリア画面 clear.blade.php */
-/* 再入力画面 update_time_limit.blade.php  再入力画面 update_time_limit.blade.php */
+   /**
+ * ----------------------------------------
+ *  
+ここまでがクリア画面 clear.blade.php  ここまでがクリア画面 clear.blade.php  ここまでがクリア画面 clear.blade.php
 
+ * ----------------------------------------
+ */
+
+  /**
+ * ----------------------------------------
+ * 
+再入力画面 update_time_limit.blade.php  再入力画面 update_time_limit.blade.php
+
+ * ----------------------------------------
+ */
 .update_wrapper {
     width: 100%;
     height: 100%;
@@ -520,8 +579,23 @@ color: red;
 .priest p {
     color: red;
 }
-/* ここまでが再入力画面 update_time_limit.blade.php  ここまでが再入力画面 update_time_limit.blade.php   ここまでが再入力画面 update_time_limit.blade.php */
-/* ラスボスバトルページ goal.blade.php  ラスボスバトルページ goal.blade.php  ラスボスバトルページ goal.blade.php */
+ /**
+ * ----------------------------------------
+ *  
+ここまでが再入力画面 update_time_limit.blade.php  ここまでが再入力画面 update_time_limit.blade.php   ここまでが再入力画面 update_time_limit.blade.php
+
+ * ----------------------------------------
+ */
+
+  /**
+ * ----------------------------------------
+ *  
+ラスボスバトルページ goal.blade.php  ラスボスバトルページ goal.blade.php  ラスボスバトルページ goal.blade.php
+
+ * ----------------------------------------
+ */
+
+
 .goal_wrapper {
     width: 100%;
     height: 100%;
@@ -558,9 +632,11 @@ color: red;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
 }
-/* ここまでがラスボスバトルページ goal.blade.php  ここまでがラスボスバトルページ goal.blade.php  ここまでがラスボスバトルページ goal.blade.php */
+ /**
+ * ----------------------------------------
+ *  
+ここまでがラスボスバトルページ goal.blade.php  ここまでがラスボスバトルページ goal.blade.php  ここまでがラスボスバトルページ goal.blade.php
 
+ * ----------------------------------------
+ */
 
-input[type="datetime-loca"] i{
-    color: #fff!important;
-}

@@ -1,19 +1,48 @@
-<header>
+<style>
+  /* ボタン２ */
+  .button_2{
+    color: #d2ae2c;
+    position:relative;
+    transition:800ms ease all;
+  }
+  .button_2:hover{
+    background: #ad6fbf;
+    color: #d2ae2c;
+    text-shadow:none;
+  }
+  .button_2:before,.button_2:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #d2ae2c;
+    transition:400ms ease all;
+  }
+  .button_2:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .button_2:hover:before,.button_2:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+</style>
+<header class="top_header flex">
+<a href="http://127.0.0.1:8000/" class="main_color button_2">冒険の外</a>
 <img class="top-logo" src="../img/top-logo.svg" alt="">
-
 <!-- <h1>自分クエスト</h1> -->
-<a href="/hello/new/" class="btn-new">
+<a href="/hello/new/" class="btn-new main_color button_2">
  冒険の追加
   </a>
- 
 </header>
-<a href="http://127.0.0.1:8000/" class="top_logout main_color">Log Out</a>
 <body>
   <!-- 宇宙css -->
 <div id="d1">
   <div id="d2">
-
-  
     <div id="d3">
     </div>
   </div>

@@ -1,9 +1,8 @@
 <div class="clear_container flex">
     <img class="clear_img_1" src="https://www.dq11.jp/_img/gate_v6/pic.jpg" alt="">
-    <!-- <img class="clear_img" src="https://xneo.jp/wp-content/uploads/2019/09/dq-walk-1.jpeg" alt=""> -->
     <!-- スターウォーズ css -->
     <div class="type-pers-parent">
-        <!-- 宇宙背景 -->
+        <!-- ここから宇宙背景 -->
         <div id="d1">
             <div id="d2">
                 <div id="d3">
