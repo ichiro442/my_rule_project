@@ -1,7 +1,7 @@
 <div class="update_wrapper flex">
     <div class="img_wrapper">
     <!-- <img src="../img/dragon.jpg" alt=""> -->
-    <img class="update_img" src="https://lh3.googleusercontent.com/proxy/_5pdpbH31gU0IQROt4kIZBc3m1i-SB4vdorbk_zTzCLovwXEHOJl9TCVr3iopE48TVeHofGAxjFcTYg_l1ARGr_9g5S_IjFPtlUrqFPD94_2lRpzmaRQZ4Ew9fLRIuOLHxyvrxUC2nDbGMZlct9qjzDxzuH3rX_dktM4WuYs5EHnlVWKI7n_eyCas_-c-tonliEMiYSzaaARnZHp54b7I4HDC5DPb-50MRy3JJ3lqOxB5JPi2Il1kcGGEK1RU7Ar2kBiTWf15VYdE1mM1bBSvtbVOB5h801zslEe" alt="">
+    <img class="update_img" src="https://lh3.googleusercontent.com/proxy/VAC0iycLa3DUC9-0PsRXUgA4zrasEkvqwG4kcHvX23svjzu6rOTig7ie54kkNieCe81kgIlSOm5mDrShgFrEf_b1JYsSJ4ysHU_1q2sWkbP8ke3LMJwPDTvez8tO2xplS1kcDyWQhxkOQSkhpICL3zsl15o4VtJAvaZ5GH1YOBpKg7p-BNOPT3dYS_ho0p8hEqgwuhi3HxaGOdDclHgjoXgCsXBndbfTBF4cr518_erC69ZJdt4j7IPLN3dnnk-EKZbR4z1S0sPddkmDNBWDELM8ueXM2khIPnXa" alt="">
    </div>
     <div class="update_container flex">
         <form  action="{{ url('/behavior/'.$goal['id'])}}" method="POST">
