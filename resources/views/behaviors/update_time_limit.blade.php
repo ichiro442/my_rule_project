@@ -1,7 +1,10 @@
 <div class="update_wrapper flex">
     <div class="img_wrapper">
         <!-- <img class="update_img"  src=".../storage/img/dragon.jpg" alt=""> -->
-        <img class="update_img" src="https://lh3.googleusercontent.com/proxy/XHlEEmh66Vz2hQvVBvW3gNJtajHZ92x3ZwDZPQCxBlgAiQrPDkEucCBYIi2kbJffvMjDn2NAoFylvMoIOzoV1XWmnfqaZcIFjfeGMHsrP7o22YpLY_Aa49KbcWgFtbbINXr13TpPA-UJ8i54ymUtEAZSkIuu8TWDvWjQWkBNOA1LmQHNRcx4aEZg11NK28XKsRHonzQAfPIj5q6ijdXtxKzecPVzvT6G6bsMIOS34qV98G_OX6NnJrux0HvrU6KdUVzjt2btConfdjOZyII6S9v3g_IVoHvwdNJ3" alt="">
+        <!-- <img class="update_img" src="https://lh3.googleusercontent.com/proxy/XHlEEmh66Vz2hQvVBvW3gNJtajHZ92x3ZwDZPQCxBlgAiQrPDkEucCBYIi2kbJffvMjDn2NAoFylvMoIOzoV1XWmnfqaZcIFjfeGMHsrP7o22YpLY_Aa49KbcWgFtbbINXr13TpPA-UJ8i54ymUtEAZSkIuu8TWDvWjQWkBNOA1LmQHNRcx4aEZg11NK28XKsRHonzQAfPIj5q6ijdXtxKzecPVzvT6G6bsMIOS34qV98G_OX6NnJrux0HvrU6KdUVzjt2btConfdjOZyII6S9v3g_IVoHvwdNJ3" alt=""> -->
+        <img src="{{ asset('img/dragon.jpg') }}" class="update_img" alt="教会">
+        <!-- <img src="../../img/dragon.jpg" class="update_img" alt="ドラゴン"> -->
+
    </div>
     <div class="update_container flex">
         <form  action="{{ url('/behavior/'.$goal['id'])}}" method="POST">
