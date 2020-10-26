@@ -37,12 +37,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    // protected $fillable = ['goal', 'user_id', 'experience_point','time_limit', 'reward'];
+    // protected $fillable = ['name', 'email', 'email_verified_at','password', 'experience_point','level','all_rewards'];
 
     public function goals()
     {
         return $this->hasMany('App\Goal');
-        // 一対多で、多側から一側に繋がる道の名前がhasMany
+        // 一対多で、一側から多側に繋がる道の名前がhasMany
 
     }
     

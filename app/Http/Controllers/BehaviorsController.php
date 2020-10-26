@@ -68,7 +68,6 @@ class BehaviorsController extends Controller
       }
     }
     $user->save();
-    //枝が書いたところ
     $hoge = \App\Level_standard::where("level", $user->level)->first(); // レベルスタンダードの"level"の$user->levelユーザーのレベルと一致するものを一つとってくる
     return view('behaviors.clear', compact("goal","behavior","user","level", "hoge"));
   }
