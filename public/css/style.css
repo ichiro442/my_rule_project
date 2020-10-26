@@ -156,6 +156,31 @@ main {
  *入力画面 new.blade.php 入力画面 new.blade.php 入力画面 new.blade.php 
  * ----------------------------------------
  */
+
+
+ .flash1{
+    animation: Flash1 10s infinite;
+    width: 75%;
+    height: 100%;
+background-image: url(https://lh3.googleusercontent.com/ERCYQczzHQjcu_260zoyb78_7CnHsLTt95lDWwquH4Gig9LxX1Dwq51KK422P6bT7wrBYdqS4O-jg2FHDtqLsM2j0cJJr-T8adnjsnYXa3UW);
+background-size: cover;
+position: relative;
+  }
+  
+  /* アニメーション */
+  @keyframes Flash1{
+    50%{
+      opacity: 0;
+    }
+  }
+
+  .new_img{
+      width: 60%;
+      height: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 10rem;
+  }
  /* .new_main{
     width: 100%;
     height: 100%;

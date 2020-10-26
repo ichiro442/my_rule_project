@@ -1,6 +1,8 @@
 <header class="main_color"><h1>入力フォーム</h1></header>
 <body>
 <main class="new_main flex"> 
+<img class="new_img" src="https://img.atwikiimg.com/www30.atwiki.jp/niconicomugen/attach/7980/16749/DQ5-2.png" alt="">
+<span class="flash1"></span>
   <!-- <div class="new_form"> -->
     <form action="{{ url('/hello/create')}}" method="POST">
       {{ csrf_field() }}
@@ -37,15 +39,6 @@
       </button>
     </form>
   </div>
-  <!-- スターウォーズ ゆっくり遠ざかっていく-->
-  <!-- <div class="new_background">
-    <div class="type-pers-parent flex">
-      <div class="type-pers-child">
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor nisl id est auctor mollis sed non urna. Sed et ornare neque.</p>
-      </div>
-  </div>   -->
-<!-- </div> -->
 </main>
 </body>
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
