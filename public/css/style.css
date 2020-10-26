@@ -181,21 +181,35 @@ position: relative;
       bottom: 0;
       left: 10rem;
   }
- /* .new_main{
-    width: 100%;
-    height: 100%;
-}
-.new_background{
-    width: 60%;
-}
-.type-pers-parent{
-    height: 100% !important;
-} */
  /**
  * ----------------------------------------
  *ここまでが入力画面 new.blade.php ここまでが入力画面 new.blade.php ここまでが入力画面 new.blade.php 
  * ----------------------------------------
  */
+
+ /**
+ * ----------------------------------------
+ *編集画面 edit.blade.php 編集画面 edit.blade.php 編集画面 edit.blade.php 
+ * ----------------------------------------
+ */
+
+
+.edit_main {
+    background-color: #6CB8FF;
+    animation: gradationTest 5s infinite;
+  }
+  @keyframes gradationTest {
+    0% { background-color: #6CB8FF; }
+    50% { background-color: #FFF66C; }
+    100% { background-color: #FFA36C; }
+  }
+
+   /**
+ * ----------------------------------------
+ *ここまでが編集画面 edit.blade.php ここまでが編集画面 edit.blade.php ここまでが編集画面 edit.blade.php 
+ * ----------------------------------------
+ */
+
 
  /**
  * ----------------------------------------

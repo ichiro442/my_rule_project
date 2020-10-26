@@ -1,5 +1,5 @@
 <header class="main_color"><h1>冒険の編集</h1></header>
-<main class="flex">
+<main class="edit_main flex">
   <form action="{{ url('/hello/update/'.$goal->id)}}" method="POST">
     {{ csrf_field() }}
     <table>
