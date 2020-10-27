@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バトルページ</title>
+</head>
 <div class="goal_wrapper flex">
       <!-- ラスボス画像 -->
       <img class="goal_img buruburu" src="https://yuugokino.com/wp-content/uploads/2019/06/f8c5975420433544f1ae12d94a2993c8.png" alt="">
@@ -117,3 +124,4 @@ window.onload = function () {
 </script>
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    </html>
