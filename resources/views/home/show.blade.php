@@ -78,7 +78,7 @@
 				<div class="flex">
 					<div class="last_boss limit">期限：{{ $goal->time_limit }}</div>
 						<a href="/goals/{{ $goal->id }}" class="column boss_color  button">たたかう</a>
-						<a href="/hello/{{ $goal->id }}" class="column boss_color button">にげる</a>
+						<a href="/hello" class="column boss_color button">にげる</a>
 
 						<!-- <div class="fight_btn">
 							<a href="/behavior/{{ $goal->id }}" class="column boss_color">たたかう</a>
@@ -101,7 +101,7 @@
 							<div class="column small_boss_box">小ボス：{{ $behavior->task }}</div>
 							<div class="column small_boss_box">ご褒美：{{ $behavior->reward }}</div>
 							<div class="column small_boss_box limit">期限：{{ $behavior->time_limit }}</div>
-							<a href="/behavior/{{ $behavior->id }}" class="column small_boss_box button">たたかう</a><a href="/hello/{{ $goal->id }}" class="column small_boss_box button">にげる</a>
+							<a href="/behavior/{{ $behavior->id }}" class="column small_boss_box button">たたかう</a><a href="/hello" class="column small_boss_box button">にげる</a>
 
 						</div>
 					@elseif ($behavior->choice == "middle_boss")
@@ -109,7 +109,7 @@
 						<div class="column middle_boss_box">中ボス：{{ $behavior->task }}</div>
 						<div class="column middle_boss_box">ご褒美：{{ $behavior->reward }}</div>
 						<div class="column middle_boss_box limit">期限：{{ $behavior->time_limit }}</div>
-						<a href="/behavior/{{ $behavior->id  }}" class="column middle_boss_box button">たたかう</a><a href="/hello/{{ $goal->id }}" class="column middle_boss_box button">にげる</a>
+						<a href="/behavior/{{ $behavior->id  }}" class="column middle_boss_box button">たたかう</a><a href="/hello" class="column middle_boss_box button">にげる</a>
 
 					</div>
 				</div>
