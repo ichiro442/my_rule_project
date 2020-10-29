@@ -674,6 +674,17 @@ color: red;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
 }
+/* にげるボタン点滅処理 */
+.flash2{
+    animation: Flash1 1s infinite;
+  }
+  /* アニメーション */
+  @keyframes Flash2{
+    50%{
+      opacity: 0;
+    }
+  }
+
  /**
  * ----------------------------------------
  *  

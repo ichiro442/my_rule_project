@@ -40,7 +40,7 @@
             <p>たたかう</p>
             <p>いれかえ</p>
             <p>さくせん</p>
-            <p> <a class="button" href="/hello/{{ $goal->id }}">にげる</a></p>
+            <p><span class="flash2"><a class="button" href="/hello/{{ $goal->id }}">にげる</a></span></p>
           </div>
         </div>
         <div class="battle_enemy edit-new">
