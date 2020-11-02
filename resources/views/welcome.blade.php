@@ -79,6 +79,7 @@
                 <div class="top-right links login_box flex">
                     @auth
                         <a class="edit-new button" href="{{ url('/home') }}">Home</a>
+                        <a class="edit-new button" href="">使い方</a>
                     @else
                         <a class="edit-new button" href="{{ route('login') }}">Login</a>
                         @if (Route::has('register'))

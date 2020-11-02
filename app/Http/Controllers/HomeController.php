@@ -96,9 +96,4 @@ class HomeController extends Controller
     $goal->delete();
     return redirect("/hello");
     }
-    // function clear($id)
-    // {
-    // $goal = \App\Goal::find($id);
-    // return view('behaviors.clear', compact("goal"));
-    // }
 }
