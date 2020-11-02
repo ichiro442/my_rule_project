@@ -78,13 +78,18 @@
                 @if (Route::has('login'))
                 <div class="top-right links login_box flex">
                     @auth
+                    <div class="home_btn flex">
                         <a class="edit-new button" href="{{ url('/home') }}">Home</a>
-                        <a class="edit-new button" href="">使い方</a>
+                        <a class="edit-new button" href="https://jibunquest-lp.programing-independence.com/quest_lp.html">使い方</a>
+                    </div>
                     @else
+                    <div class="home_btn flex">
                         <a class="edit-new button" href="{{ route('login') }}">Login</a>
                         @if (Route::has('register'))
                             <a class="edit-new button" href="{{ route('register') }}">Register</a>
                         @endif
+                        <a class="edit-new button" href="https://jibunquest-lp.programing-independence.com/quest_lp.html">使い方</a>
+                        </div>
                     @endauth
                 </div>
             @endif
