@@ -10,8 +10,6 @@
 
 ・Requirement：Laravel Framework 7.28.3, ProductName:Mac OS X, ProductVersion:10.15.7, BuildVersion:19H15
 
-・Install：
-
 ・Author：Ichiro Moriyama
 
 ・license："my_rule_project" is under [MIT license]
