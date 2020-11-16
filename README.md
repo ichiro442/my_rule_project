@@ -9,15 +9,16 @@
 ・Usage：https://jibunquest-lp.programing-independence.com/quest_lp.html
 
 ・Requirement：
-    ○Laravel Framework 7.28.3,
-    
-    ○ProductName:Mac OS X
-    
-    ○ProductVersion:10.15.7 
-    
-    ○BuildVersion:19H15
-    
-    ○PHP 7.3.11
+
+        ○Laravel Framework 7.28.3,
+
+        ○ProductName:Mac OS X
+
+        ○ProductVersion:10.15.7 
+
+        ○BuildVersion:19H15
+
+        ○PHP 7.3.11
 
 ・Author：Ichiro Moriyama
 
