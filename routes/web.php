@@ -59,7 +59,7 @@ Route::get('/goal/clear/{id}', 'BehaviorsController@goal_clear')->where('id', '[
 
 Route::get('/goal/goal_update_time_limit/{id}', 'BehaviorsController@goal_update_time_limit')->where('id', '[0-9]+'); 
 
-Route::get('/hello', 'Auth\LoginController@guestLogin');
+Route::get('/guest_login', 'auth\LoginController@guestLogin');
 
 // Auth::routes();
 

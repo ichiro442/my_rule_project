@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <button type="submit" class="btn btn-secondary guest-btn">
-                            <a href="/hello">Guest Login</a>
+                            <a href="/guest_login" method="POST">Guest Login</a>
                         </button>
 
                         <div class="form-group row mb-0">
