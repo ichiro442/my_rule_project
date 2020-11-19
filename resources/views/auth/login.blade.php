@@ -50,6 +50,9 @@
                                 </div>
                             </div>
                         </div>
+                        <button type="submit" class="btn btn-secondary guest-btn">
+                            <a href="/http://xs757184.xsrv.jp/hello">Guest Login</a>
+                        </button>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
