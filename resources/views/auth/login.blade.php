@@ -50,12 +50,13 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-secondary guest-btn">
-                            <a href="/guest_login" method="POST">Guest Login</a>
-                        </button>
-
+                        <!-- <div class="guest_login"> -->
+                        <!-- </div> -->
                         <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
+                            <div class="col-md-8 offset-md-4 guest_login flex">
+                                <button type="submit" class="">
+                                    <a class="btn  button_2" href="/guest_login" method="POST">かんたんログイン</a>
+                                </button>
                                 <button type="submit" class="btn btn-primary button_2">
                                     {{ __('Login') }}
                                 </button>
@@ -66,6 +67,7 @@
                                     </a>
                                 @endif
                             </div>
+
                         </div>
                     </form>
                 </div>
