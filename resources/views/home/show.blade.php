@@ -37,7 +37,7 @@
 					</div>
 				@endif
 
-		<form action="{{ url('/behavior/'.$goal['id'])}}" method="POST">
+		<form action="{{ url('/behavior/'.$goal['id']) }}" method="POST">
 		{{ csrf_field() }}
 				<table>
 					<tr>

@@ -33,7 +33,7 @@
 </style>
 <header class="top_header flex">
 <!-- <a href="http://127.0.0.1:8000/" class="main_color button_2">冒険の外</a> -->
-<a href="http://xs757184.xsrv.jp/" class="main_color button_2">冒険の外</a>
+<a href="http://jibun-quest.moriyama-programming.tokyo" class="main_color button_2">冒険の外</a>
 <img class="top-logo" src="../img/top-logo.svg" alt="">
 <!-- <h1>自分クエスト</h1> -->
 <a href="/hello/new/" class="btn-new main_color button_2">
