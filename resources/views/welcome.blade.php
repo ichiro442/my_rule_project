@@ -88,7 +88,7 @@
                         @if (Route::has('register'))
                             <a class="edit-new button" href="{{ route('register') }}">Register</a>
                         @endif
-                        <a class="edit-new button" href="https://jibunquest-lp.programing-independence.com/quest_lp.html">使い方</a>
+                        <a class="edit-new button" href="https://jibun-quest-usage.s3.ap-northeast-1.amazonaws.com/quest_lp.html">使い方</a>
                         </div>
                     @endauth
                 </div>
