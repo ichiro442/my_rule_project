@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/space.css') }}" rel="stylesheet">
-    
+
 
 
         <!-- Styles -->
@@ -80,7 +80,7 @@
                     @auth
                     <div class="home_btn flex">
                         <a class="edit-new button" href="{{ url('/home') }}">Home</a>
-                        <a class="edit-new button" href="https://jibunquest-lp.programing-independence.com/quest_lp.html">使い方</a>
+                        <a class="edit-new button" href="https://jibun-quest-usage.s3.ap-northeast-1.amazonaws.com/quest_lp.html">使い方</a>
                     </div>
                     @else
                     <div class="home_btn flex">
