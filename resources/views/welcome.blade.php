@@ -92,5 +92,4 @@
             </div>
         </div>
     </body>
-    <!-- <script type="text/javascript" src="techAcademy.js"></script> -->
 </html>
