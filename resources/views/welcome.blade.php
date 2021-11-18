@@ -10,6 +10,10 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/space.css') }}" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/favicon-16x16.png') }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
 
 
 
