@@ -10,7 +10,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/space.css') }}" rel="stylesheet">
         {{-- <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/favicon-16x16.png') }}"> --}}
-        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/apple-icon-57x57.png') }}">
+        {{-- <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/apple-icon-57x57.png') }}">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicon/apple-icon-60x60.png') }}">
         <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/favicon/apple-icon-72x72.png') }}">
         <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/favicon/apple-icon-76x76.png') }}">
@@ -26,7 +26,7 @@
         <link rel="manifest" href="{{ asset('img/favicon/manifest.json') }}">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#ffffff"> --}}
 
         <title>自分クエスト</title>
         <!-- Styles -->
