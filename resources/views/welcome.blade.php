@@ -8,7 +8,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/space.css') }}" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon"  href="{{ asset('/favicon.ico') }}">
-        <title>自分クエスト</title>
+        <title>{{ config('app.name') }}</title>
         <!-- Styles -->
         <style>
             html, body {
